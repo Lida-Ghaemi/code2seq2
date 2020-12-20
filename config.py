@@ -2,10 +2,10 @@ class Config:
     @staticmethod
     def get_default_config(args):
         config = Config(args)
-        config.NUM_EPOCHS = 11
+        config.NUM_EPOCHS = 8
         config.SAVE_EVERY_EPOCHS = 1
         config.PATIENCE = 10
-        config.BATCH_SIZE = 256
+        config.BATCH_SIZE = 285
         config.TEST_BATCH_SIZE = 256
         config.READER_NUM_PARALLEL_BATCHES = 1
         config.SHUFFLE_BUFFER_SIZE = 10000
@@ -72,7 +72,7 @@ class Config:
     @staticmethod
     def get_debug_config(args):
         config = Config(args)
-        config.NUM_EPOCHS = 11
+        config.NUM_EPOCHS = 8
         config.SAVE_EVERY_EPOCHS = 100
         config.PATIENCE = 200
         config.BATCH_SIZE = 7
